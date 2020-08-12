@@ -1,5 +1,10 @@
 <template>
   <div>
+    <input type="text" id="addressInput2" value="Tokyo" style="width:250px" />
+    <input type="button" value="get longitude and latitude" v-on:click="getMap();" />
+    <br />
+    <br />
+
     <GmapMap
       :zoom="10"
       :center="{ lat: 35.658636, lng: 139.745414 }"
